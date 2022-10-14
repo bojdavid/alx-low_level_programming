@@ -7,11 +7,21 @@
 
 int main(void)
 {
-	long int ch;
+	int ch;
 
 	for (ch = 0; ch <= 9; ch++)
 	{
-		putchar(ch + '0');
+		if (ch < 9)
+		{
+			putchar(ch + '0');
+			putchar(',');
+		}
+		else if (ch == 9)
+		{
+			putchar(ch + '0');
+		}
 	}
 	putchar('\n');
+
+	return (0);
 }
