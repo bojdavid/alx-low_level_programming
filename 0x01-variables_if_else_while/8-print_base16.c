@@ -9,10 +9,14 @@ int main(void)
 {
 	 int ch;
 
-	for (ch = '0'; ch <= '15'; ch++)
+	for (ch = '0'; ch <= '9'; ch++)
 	{
-		putchar('%x',ch);
-		putchar('\n');
+		putchar(ch);
 	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 	return (0);
 }
