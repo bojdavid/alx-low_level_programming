@@ -9,14 +9,17 @@ int main(void)
 {
 	 char ch;
 
-	printf("Alphabets from a - z are: \n");
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch != 'q')
+		if (ch == 'q' || ch == 'e')
+		{
+			continue;
+		}
+		else
 		{
 			putchar(ch);
 		}
-		putchar('\n')
 	}
+	putchar('\n');
 	return (0);
 }
