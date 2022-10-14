@@ -15,8 +15,8 @@ int main(void)
 		if (ch != 'q')
 		{
 			putchar(ch);
-			putchar('\n');
 		}
+		putchar('\n')
 	}
 	return (0);
 }
