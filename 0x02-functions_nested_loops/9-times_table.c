@@ -6,41 +6,27 @@
 
 void times_table(void)
 {
-	int num;
+	int num1, num2, mult;
 
-	for (num = 0; num < 10; num++)
+	for (num1 = 0; num1 < 10; num1++)
 	{
-		_putchar((num * 0) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 1) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 2) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 3) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 4) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 5) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 6) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 7) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 8) + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar((num * 9) + '0');
-		_putchar(',');
-		_putchar(' ');
-
+		for (num2 = 0; num2 < 10; num2++)
+		{
+			mult = num1 * num2;
+			if (mult < 10)
+			{
+				_printchar(mult + '0');
+				_printchar(',');
+				_printchar(' ');
+			}
+			else
+			{
+				_printchar((mult / 10) + '0');
+				_printchar((mult % 10) + '0');
+				_printchar(',');
+				_printchar(' ');
+			}
+		}
+		_printchar('\n');
 	}
-	_putchar('\n');
 }
