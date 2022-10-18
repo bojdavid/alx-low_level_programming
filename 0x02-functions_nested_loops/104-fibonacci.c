@@ -28,9 +28,9 @@ void fibonacci(unsigned long a, unsigned long b, int count)
 		a = b;
 		b = temp + b;
 		if (count > 1)
-			printf("%ld, ", a);
+			printf("%lu, ", a);
 		else
-			printf("%ld", a);
+			printf("%lu", a);
 		count--;
 		fibonacci(a, b, count);
 	}
