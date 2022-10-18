@@ -6,7 +6,7 @@
   *@limit: the limit
   */
 
-void times_table(int limit)
+void print_times_table(int limit)
 {
 	int num1, num2, mult;
 
