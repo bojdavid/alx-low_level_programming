@@ -25,12 +25,13 @@ void fibonacci(long int a, long int b)
 {
 	if (a < 4000000)
 	{
-		int temp = a;
+		long int temp = a;
 
 		a = b;
 		b = temp + b;
-		int mod = a % 2;
-
+		int mod;
+		
+		mod= a % 2;
 		if (mod == 0)
 			sum += a;
 		fibonacci(a, b);
