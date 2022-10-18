@@ -1,19 +1,5 @@
 #include "main.h"
 
-void print_alphabet(void);
-
-
-/**
-  *main - entry point
-  *Return: 0 on success
-  */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 /**
   *print_alphabet - prints the alphabet, in lowercase, followed by a new line.
   *Return: a-z
