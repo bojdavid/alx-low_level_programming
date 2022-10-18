@@ -1,19 +1,4 @@
-#include "_putchar.c"
-
-void print_alphabet(void);
-
-void print_alphabet_x10(void);
-
-/**
-  *main - entry point
-  *Return: 0 on success
-  */
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
+#include "main.h"
 
 /**
   *print_alphabet - prints the alphabet, in lowercase, followed by a new line.
