@@ -15,16 +15,16 @@ void times_table(void)
 			mult = num1 * num2;
 			if (mult < 10)
 			{
-				_printchar(mult + '0');
-				_printchar(',');
-				_printchar(' ');
+				_putchar(mult + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
-				_printchar((mult / 10) + '0');
-				_printchar((mult % 10) + '0');
-				_printchar(',');
-				_printchar(' ');
+				_putchar((mult / 10) + '0');
+				_putchar((mult % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_printchar('\n');
