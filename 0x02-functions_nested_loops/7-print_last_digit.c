@@ -3,7 +3,7 @@
 
 /**
   *print_last_digit - prints the alphabet, in lowercase
-  *a: int
+  *@n: int
   *Return: the asbsolute val of the int
   */
 
