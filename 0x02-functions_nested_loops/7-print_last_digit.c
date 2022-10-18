@@ -1,14 +1,12 @@
 #include "main.h"
 
-int print_last_digit(int a);
-
 /**
   *print_last_digit - prints the alphabet, in lowercase, followed by a new line.
   *a: int
   *Return: the asbsolute val of the int
   */
 
-int print_last_digit(int a)
+int print_last_digit(int n)
 {
 	int ld = a % 10;
 	if (ld < 0)
