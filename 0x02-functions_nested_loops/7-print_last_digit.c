@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_last_digit(int);
+int print_last_digit(int a);
 
 /**
   *print_last_digit - prints the alphabet, in lowercase, followed by a new line.
