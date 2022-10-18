@@ -8,3 +8,13 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
+
+/**
+ *main - main
+ *Return: returns 0
+ */
+
+int main(void)
+{
+	return (0);
+}
