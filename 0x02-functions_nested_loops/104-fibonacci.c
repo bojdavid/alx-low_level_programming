@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void fibonacci(long int a, long int b, int count);
+void fibonacci(unsigned long a, unsigned long b, int count);
 
 /**
   *main - fibbonacci sequence
@@ -19,7 +19,7 @@ int main(void)
   *@b: where it preceeding number
   *@count: number of sequence
   */
-void fibonacci(long int a, long int b, int count)
+void fibonacci(unsigned long a, unsigned long b, int count)
 {
 	if (count > 0)
 	{
