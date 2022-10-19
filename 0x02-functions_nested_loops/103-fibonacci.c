@@ -10,7 +10,7 @@ void fibonacci(long int a, long int b);
 
 int main(void)
 {
-	unsigned long sum, a, b, limit;
+	long sum, a, b, limit, temp;
 	
 	a = 1;
 	b = 2;
@@ -23,7 +23,7 @@ int main(void)
 		{
 			sum = sum + b; 
 		}
-		unsigned long temp = a;
+		temp = a;
 		a = b;
 		b = temp + a;
 	}
