@@ -11,7 +11,7 @@ void fibonacci(long int a, long int b);
 int main(void)
 {
 	long sum, a, b, limit, temp;
-	
+
 	a = 1;
 	b = 2;
 	limit = 4000000;
@@ -21,13 +21,13 @@ int main(void)
 	{
 		if ((b % 2) == 0)
 		{
-			sum = sum + b; 
+			sum = sum + b;
 		}
 		temp = a;
 		a = b;
 		b = temp + a;
 	}
-	printf("%lu\n",sum);
+	printf("%lu\n", sum);
 
 	return (0);
 }
