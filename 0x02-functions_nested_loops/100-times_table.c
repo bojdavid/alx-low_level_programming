@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  *times_table - prints the multiplication table from 0-9
+  *print_times_table - prints the multiplication table from 0-9
   *@limit: the limit
   */
 
@@ -19,16 +19,21 @@ void print_times_table(int limit)
 			putchar(',');
 			putchar(' ');
 
-			if (mult < 10)
-			{
+			if (mult < 100)
 				putchar(' ');
-				putchar(mult + '0');
+			if (mult < 10)
+				putchar(' ');
+
+			if (mult >= 100)
+			{
+				putchar((mult / 100) + '0');
+				putchar(((mult / 10) % 10) + '0');
 			}
-			else
+			else if (mult < 100 && mult >= 10)
 			{
 				putchar((mult / 10) + '0');
-				putchar((mult % 10) + '0');
 			}
+			putchar((mult % 10) + '0');
 		}
 		putchar('\n');
 	}
