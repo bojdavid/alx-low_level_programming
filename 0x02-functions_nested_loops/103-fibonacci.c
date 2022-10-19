@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-long int sum = 0;
 
 void fibonacci(long int a, long int b);
 
@@ -11,30 +10,29 @@ void fibonacci(long int a, long int b);
 
 int main(void)
 {
-	fibonacci(1, 1);
-	return (0);
-}
+	unsigned long sum, a, b, limit;
+	
+	a = 1;
+	b = 2;
+	limit = 4000000;
+	sum = 0;
 
-/**
-  *fibonacci - fibonnaci seq
-  *@a: where it initial number
-  *@b: where it preceeding number
-  */
-
-void fibonacci(long int a, long int b)
-{
-	if (a < 4000000)
+	while (b < limit)
 	{
-		long int temp = a;
-		int mod;
-
+		if ((b % 2) == 0)
+		{
+			if(b < 3000000)
+			{
+				printf("%lu, ", b);
+			}
+			else
+				printf("%lu\n", b);
+		}
+		unsigned long temp = a;
 		a = b;
-		b = temp + b;
-		mod = a % 2;
-		if (mod == 0)
-			sum += a;
-		fibonacci(a, b);
+		b = temp + a;
 	}
-	else
-		printf("%ld\n", sum);
+	
+
+	return (0);
 }
