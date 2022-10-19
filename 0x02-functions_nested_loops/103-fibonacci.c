@@ -21,18 +21,13 @@ int main(void)
 	{
 		if ((b % 2) == 0)
 		{
-			if(b < 3000000)
-			{
-				printf("%lu, ", b);
-			}
-			else
-				printf("%lu\n", b);
+			sum = sum + b; 
 		}
 		unsigned long temp = a;
 		a = b;
 		b = temp + a;
 	}
-	
+	printf("%lu\n",sum);
 
 	return (0);
 }
