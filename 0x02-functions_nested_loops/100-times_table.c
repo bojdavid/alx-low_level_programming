@@ -1,40 +1,44 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-  *print_times_table - prints the multiplication table from 0-9
-  *@limit: the limit
-  */
-
-void print_times_table(int limit)
+ * print_times_table - Prints the times table of the input,
+ *                     starting with 0.
+ * @n: The value of the times table to be printed.
+ */
+void print_times_table(int n)
 {
-	int num1, num2, mult;
+	int num, mult, prod;
 
-	for (num1 = 0; num1 <= limit; num1++)
+	if (n >= 0 && n <= 15)
 	{
-		putchar('0');
-		for (num2 = 1; num2 <= limit; num2++)
+		for (num = 0; num <= n; num++)
 		{
-			mult = num1 * num2;
-			putchar(',');
-			putchar(' ');
+			_putchar('0');
 
-			if (mult < 100)
-				putchar(' ');
-			if (mult < 10)
-				putchar(' ');
+			for (mult = 1; mult <= n; mult++)
+			{
+				_putchar(',');
+				_putchar(' ');
 
-			if (mult >= 100)
-			{
-				putchar((mult / 100) + '0');
-				putchar(((mult / 10)) % 10 + '0');
+				prod = num * mult;
+
+				if (prod <= 99)
+					_putchar(' ');
+				if (prod <= 9)
+					_putchar(' ');
+
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
+				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+				_putchar((prod % 10) + '0');
 			}
-			else if (mult < 100 && mult >= 10)
-			{
-				putchar((mult / 10) + '0');
-			}
-			putchar((mult % 10) + '0');
+			_putchar('\n');
 		}
-		putchar('\n');
 	}
 }
