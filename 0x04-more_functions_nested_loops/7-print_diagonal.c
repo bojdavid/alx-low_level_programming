@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-  *print_diagonal - Werite a function that prints line.
+ *print_diagonal - Werite a function that prints line.
  *@n: no of dashes
+ *Return: void
  */
 
 void print_diagonal(int n)
@@ -14,7 +15,7 @@ void print_diagonal(int n)
 
 	for (count = 1; count <= n; count++)
 	{
-		for (space = 1; space <= count; space++)
+		for (space = 1; space < count; space++)
 		{
 			_putchar(' ');
 		}
