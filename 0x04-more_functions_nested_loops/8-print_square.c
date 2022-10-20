@@ -2,15 +2,15 @@
 
 /**
   *print_square - Werite a function that prints line.
- *@n: no of dashes
+ *@size: no of dashes
  */
 
-void print_square(int n)
+void print_square(int size)
 {
 	int count = 0;
 	int i;
 
-	while (count < n)
+	while (count < size)
 	{
 		for (i = 0; i < n; i++)
 		{
@@ -19,6 +19,6 @@ void print_square(int n)
 		count++;
 		_putchar('\n');
 	}
-	if (n == 0)
+	if (n <= 0)
 		_putchar('\n');
 }
