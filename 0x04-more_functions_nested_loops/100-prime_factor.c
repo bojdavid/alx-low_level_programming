@@ -19,11 +19,11 @@ int main(void)
 				M /= i;
 		}
 	}
-	
+
 	if (M > 1)
 		P = M;
-	
+
 	printf("%lu\n", P);
-	
+
 	return (0);
 }
