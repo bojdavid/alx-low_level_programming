@@ -8,22 +8,13 @@
 
 int main(void)
 {
-	unsigned long int M = 600851475143, P = 0, i;
+	unsigned long int i, n = 612852475143;
 
-	for (i = 3; i * i <= M; i += 2)
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		if (M % i == 0)
-		{
-			P = i;
-			while (M % i == 0)
-				M /= i;
-		}
+		while ((n % i == 0) && (n != i))
+			n = n / i;
 	}
-
-	if (M > 1)
-		P = M;
-
-	printf("%lu\n", P);
-
+	printf("%lu\n", n);
 	return (0);
 }
