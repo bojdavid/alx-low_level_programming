@@ -15,7 +15,7 @@ int main(void)
 
 	for (num = 1; num <= 100; num++)
 	{
-		if (num < 100 && num > 1)
+		if (num <= 100 && num > 1)
 			printf(" ");
 
 		if ((num % 3) == 0 && (num % 5) == 0)
