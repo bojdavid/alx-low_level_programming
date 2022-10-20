@@ -13,9 +13,8 @@ int _isupper(int c)
 	for (upperchar = 65; upperchar <= 90; upperchar++)
 	{
 		if (c == upperchar)
-		{
 			return (1);
-		}
 		return (0);
 	}
+	return (0);
 }
