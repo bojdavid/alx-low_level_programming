@@ -6,7 +6,7 @@
   *@s: a char
   */
 
-void puts2(char *s)
+void puts2(char *str)
 {
 	int string;
 
