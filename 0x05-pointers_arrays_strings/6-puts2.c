@@ -3,7 +3,7 @@
 /**
   *puts2 -  a function that prints a string, in reverse,
   *followed by a new line.
-  *@s: a char
+  *@str: a char
   */
 
 void puts2(char *str)
