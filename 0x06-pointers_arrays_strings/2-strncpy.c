@@ -1,22 +1,26 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * _strncpy - concatenates two strings
  *
  * @src: The source of strings
  * @dest: The destination of the string
  * @n: The length of int
  *
- * Return: pointer to the resulting string dest
+ *Return: pointer to the resulting string dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
-	
-	for (i = 0; src != '\0'; i++)
+
+	for (i = 0; i < n && (src + 1); i++)
 	{
 		dest[i] = src[i];
 	}
-
+	for (; i < n; i++)
+	{
+		dest[i] = '\0';
+	}
+	return (dest);
 }
