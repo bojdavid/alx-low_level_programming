@@ -12,7 +12,7 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j;
+	int i;
 
 	for (i = 0; i < n && (src + 1); i++)
 	{
